@@ -51,7 +51,16 @@ invoke them.
 
 ## Install
 
-Clone this repository into a skill location for your agent.
+The easiest option is to ask your coding agent to install the skill from this
+repository:
+
+```text
+Install the Agent Skill from https://github.com/marvinseyfarth1/vibe-2-product
+and make it available as vibe-2-product. Use the appropriate skills directory
+for this agent.
+```
+
+You can also clone it manually into the skills folder for your agent.
 
 Claude Code personal skill:
 
@@ -104,18 +113,6 @@ docs/vibe-2-product-decisions.md
 
 See [examples/vibe-2-product-decisions.md](examples/vibe-2-product-decisions.md)
 for the expected shape.
-
-## LinkedIn Blurb
-
-```text
-I built a small agent skill for a problem I keep running into:
-
-After a long agent run, or after "vibe coding" a prototype, the codebase often contains a mix of useful features, half-finished ideas, placeholders, and accidental complexity.
-
-This skill walks through the codebase feature by feature, explains what is actually implemented, asks whether to keep/refine/drop each feature, and records every decision in a markdown log.
-
-The goal is simple: turn an unclear generated codebase into an actionable refinement plan.
-```
 
 ## License
 
