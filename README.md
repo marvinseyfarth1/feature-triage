@@ -7,6 +7,8 @@ It walks through a repository feature by feature, explains what is actually
 implemented, asks for one decision at a time, and records each decision in a
 markdown log.
 
+![Vibe-2-Product overview](examples/vibe-2-product.png)
+
 ## Why
 
 After a long agentic vibe coding session, the codebase often
