@@ -46,7 +46,7 @@ vibe-2-product/
 └── SKILL.md
 ```
 
-It should work with coding agents that support filesystem skills based on
+It works with coding agents that support filesystem skills based on
 `SKILL.md`, including Claude Code and Codex. The workflow itself is not tied to
 any one agent.
 
