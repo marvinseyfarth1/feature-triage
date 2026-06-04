@@ -8,7 +8,7 @@ implemented, asks for one decision at a time, and records each decision in a
 markdown log.
 
 <p align="center">
-  <img src="examples/vibe-2-product.png" width="800" alt="Vibe-2-Product">
+  <img src="examples/vibe-2-product.png" width="600" alt="Vibe-2-Product">
 </p>
 
 ## Why
