@@ -7,7 +7,9 @@ It walks through a repository feature by feature, explains what is actually
 implemented, asks for one decision at a time, and records each decision in a
 markdown log.
 
-![Vibe-2-Product overview](examples/vibe-2-product.png)
+<p align="center">
+  <img src="examples/vibe-2-product.png" width="800" alt="Vibe-2-Product">
+</p>
 
 ## Why
 
