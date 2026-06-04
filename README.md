@@ -93,8 +93,7 @@ Restart your agent if the skill does not appear immediately.
 Ask your agent to use Vibe 2 Product:
 
 ```text
-Use Vibe 2 Product to walk me through this codebase feature by feature.
-Explain each feature, ask whether to keep, refine, or drop it, and record every decision in a markdown log.
+Use Vibe-2-Product to walk me through this codebase.
 ```
 
 If your agent supports explicit skill invocation, use the installed skill name:
