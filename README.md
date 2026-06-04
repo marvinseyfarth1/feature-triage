@@ -9,7 +9,7 @@ markdown log.
 
 ## Why
 
-After a long agent run, or after "vibe coding" a prototype, the codebase often
+After a long agentic vibe coding session, the codebase often
 contains a mix of useful features, half-finished ideas, placeholders, and
 accidental complexity.
 
