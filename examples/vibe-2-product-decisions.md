@@ -1,4 +1,4 @@
-# Feature Triage Decisions
+# Vibe 2 Product Decisions
 
 Use this file as the durable source of truth for decisions made during a
 feature-by-feature walkthrough.

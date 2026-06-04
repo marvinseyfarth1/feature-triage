@@ -1,4 +1,4 @@
-# Feature Triage
+# Vibe 2 Product
 
 An agent skill for turning an unclear existing codebase into explicit product
 decisions.
@@ -9,12 +9,12 @@ markdown log.
 
 ## Why
 
-AI-assisted builds can produce a lot of code quickly. After a long-running agent
-goal, a vibe-coded prototype, or an inherited codebase, it is often unclear what
-should be kept, refined, or removed.
+After a long agent run, or after "vibe coding" a prototype, the codebase often
+contains a mix of useful features, half-finished ideas, placeholders, and
+accidental complexity.
 
-This skill creates a structured refinement pass before implementation work
-continues.
+Vibe 2 Product creates a structured refinement pass before implementation work
+continues, so you can decide what should be kept, refined, or removed.
 
 ## What It Does
 
@@ -38,7 +38,7 @@ continues.
 This is a plain `SKILL.md` skill following the common Agent Skills shape:
 
 ```text
-feature-triage/
+vibe-2-product/
 └── SKILL.md
 ```
 
@@ -56,42 +56,42 @@ Clone this repository into a skill location for your agent.
 Claude Code personal skill:
 
 ```bash
-git clone https://github.com/marvinseyfarth1/feature-triage.git ~/.claude/skills/feature-triage
+git clone https://github.com/marvinseyfarth1/vibe-2-product.git ~/.claude/skills/vibe-2-product
 ```
 
 Claude Code project skill:
 
 ```bash
-git clone https://github.com/marvinseyfarth1/feature-triage.git .claude/skills/feature-triage
+git clone https://github.com/marvinseyfarth1/vibe-2-product.git .claude/skills/vibe-2-product
 ```
 
 Codex personal skill:
 
 ```bash
-git clone https://github.com/marvinseyfarth1/feature-triage.git ~/.agents/skills/feature-triage
+git clone https://github.com/marvinseyfarth1/vibe-2-product.git ~/.agents/skills/vibe-2-product
 ```
 
 Codex project skill:
 
 ```bash
-git clone https://github.com/marvinseyfarth1/feature-triage.git .agents/skills/feature-triage
+git clone https://github.com/marvinseyfarth1/vibe-2-product.git .agents/skills/vibe-2-product
 ```
 
 Restart your agent if the skill does not appear immediately.
 
 ## Usage
 
-Ask your agent to use Feature Triage:
+Ask your agent to use Vibe 2 Product:
 
 ```text
-Use Feature Triage to walk me through this codebase feature by feature.
+Use Vibe 2 Product to walk me through this codebase feature by feature.
 Explain each feature, ask whether to keep, refine, or drop it, and record every decision in a markdown log.
 ```
 
 If your agent supports explicit skill invocation, use the installed skill name:
 
 ```text
-feature-triage
+vibe-2-product
 ```
 
 ## Decision Log
@@ -99,10 +99,10 @@ feature-triage
 The skill prefers a repo-local file such as:
 
 ```text
-docs/feature-triage-decisions.md
+docs/vibe-2-product-decisions.md
 ```
 
-See [examples/feature-triage-decisions.md](examples/feature-triage-decisions.md)
+See [examples/vibe-2-product-decisions.md](examples/vibe-2-product-decisions.md)
 for the expected shape.
 
 ## LinkedIn Blurb
@@ -110,7 +110,7 @@ for the expected shape.
 ```text
 I built a small agent skill for a problem I keep running into:
 
-After a long coding-agent run, or after vibe coding a prototype, the codebase often contains a mix of useful features, half-finished ideas, placeholders, and accidental complexity.
+After a long agent run, or after "vibe coding" a prototype, the codebase often contains a mix of useful features, half-finished ideas, placeholders, and accidental complexity.
 
 This skill walks through the codebase feature by feature, explains what is actually implemented, asks whether to keep/refine/drop each feature, and records every decision in a markdown log.
 
