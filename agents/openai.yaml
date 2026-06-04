@@ -1,0 +1,7 @@
+interface:
+  display_name: "Codebase Feature Walkthrough"
+  short_description: "Walk features and log decisions"
+  default_prompt: "Use $codebase-feature-walkthrough to walk through this codebase feature by feature and record keep/refine/drop decisions."
+
+policy:
+  allow_implicit_invocation: true
