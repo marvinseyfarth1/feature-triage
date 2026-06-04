@@ -1,6 +1,6 @@
-# Codebase Feature Walkthrough
+# Feature Triage
 
-A Codex skill for turning an unclear existing codebase into explicit product
+An agent skill for turning an unclear existing codebase into explicit product
 decisions.
 
 It walks through a repository feature by feature, explains what is actually
@@ -28,41 +28,70 @@ continues.
 ## Good Use Cases
 
 - Refining a vibe-coded prototype.
-- Reviewing a codebase produced by a long-running Codex goal.
+- Reviewing a codebase produced by a long-running coding-agent goal.
 - Understanding an inherited project before cleanup.
 - Turning scattered generated features into a product roadmap.
 - Separating useful functionality from accidental complexity.
 
+## Compatibility
+
+This is a plain `SKILL.md` skill following the common Agent Skills shape:
+
+```text
+feature-triage/
+└── SKILL.md
+```
+
+It should work with coding agents that support filesystem skills based on
+`SKILL.md`, including Claude Code and Codex. The workflow itself is not tied to
+any one agent.
+
+The main differences are where each agent expects skills to live and how you
+invoke them.
+
 ## Install
 
-Clone this repository into a Codex skill location:
+Clone this repository into a skill location for your agent.
+
+Claude Code personal skill:
 
 ```bash
-git clone https://github.com/marvinseyfarth1/codebase-feature-walkthrough.git ~/.agents/skills/codebase-feature-walkthrough
+git clone https://github.com/marvinseyfarth1/feature-triage.git ~/.claude/skills/feature-triage
 ```
 
-If your Codex setup uses `~/.codex/skills` for personal skills, clone it there
-instead:
+Claude Code project skill:
 
 ```bash
-git clone https://github.com/marvinseyfarth1/codebase-feature-walkthrough.git ~/.codex/skills/codebase-feature-walkthrough
+git clone https://github.com/marvinseyfarth1/feature-triage.git .claude/skills/feature-triage
 ```
 
-Restart Codex if the skill does not appear immediately.
+Codex personal skill:
+
+```bash
+git clone https://github.com/marvinseyfarth1/feature-triage.git ~/.agents/skills/feature-triage
+```
+
+Codex project skill:
+
+```bash
+git clone https://github.com/marvinseyfarth1/feature-triage.git .agents/skills/feature-triage
+```
+
+Restart your agent if the skill does not appear immediately.
 
 ## Usage
 
-Invoke it explicitly:
+Ask your agent to use Feature Triage:
 
 ```text
-Use $codebase-feature-walkthrough to walk me through this codebase feature by feature.
+Use Feature Triage to walk me through this codebase feature by feature.
 Explain each feature, ask whether to keep, refine, or drop it, and record every decision in a markdown log.
 ```
 
-For a repo-local team skill, copy or vendor this folder under:
+If your agent supports explicit skill invocation, use the installed skill name:
 
 ```text
-.agents/skills/codebase-feature-walkthrough/
+feature-triage
 ```
 
 ## Decision Log
@@ -70,18 +99,18 @@ For a repo-local team skill, copy or vendor this folder under:
 The skill prefers a repo-local file such as:
 
 ```text
-docs/feature-walkthrough-decisions.md
+docs/feature-triage-decisions.md
 ```
 
-See [examples/feature-walkthrough-decisions.md](examples/feature-walkthrough-decisions.md)
+See [examples/feature-triage-decisions.md](examples/feature-triage-decisions.md)
 for the expected shape.
 
 ## LinkedIn Blurb
 
 ```text
-I built a small Codex skill for a problem I keep running into:
+I built a small agent skill for a problem I keep running into:
 
-After a long agent run, or after vibe coding a prototype, the codebase often contains a mix of useful features, half-finished ideas, placeholders, and accidental complexity.
+After a long coding-agent run, or after vibe coding a prototype, the codebase often contains a mix of useful features, half-finished ideas, placeholders, and accidental complexity.
 
 This skill walks through the codebase feature by feature, explains what is actually implemented, asks whether to keep/refine/drop each feature, and records every decision in a markdown log.
 
