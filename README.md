@@ -59,7 +59,7 @@ The easiest option is to ask your coding agent to install the skill from this
 repository:
 
 ```text
-Install the Agent Skill from https://github.com/marvinseyfarth1/vibe-2-product
+Install the skill from https://github.com/marseyf/vibe-2-product
 and make it available as vibe-2-product. Use the appropriate skills directory
 for this agent.
 ```
